@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RED DEAD JOKENPÔ</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="container">
+    <section class="division">
+      <div class="telaDePersonagem">
+        <p>
+          <img
+            class="arthur"
+            src="/images/480px.png"
+            alt="Boneco do arthur morgan"
+          />
+        </p>
+        <div class="white_caracter">
+          <div class="itens-caracter">
+            <p>ESCOLHA SEU <span>PERSONAGEM:</span></p>
+            <div class="caracter-ordem">
+              <button>
+                <figure>
+                  <img
+                    src="/images/arhur_perfil.webp"
+                    alt="Foto de perfil Arthur Morgan"
+                  />
+                  <figcaption>Arthur Morgan</figcaption>
+                </figure>
+              </button>
+              <button>
+                <figure>
+                  <img
+                    src="/images/micah_perfil.avif"
+                    alt="Foto de perfil Micah Bell"
+                  />
+                  <figcaption>Micah Bell</figcaption>
+                </figure>
+              </button>
+            </div>
+          </div>
+        </div>
+        <img
+          id="micah"
+          class="Micah"
+          src="/images/MicahBell.png"
+          alt="Boneco do Micah"
+        />
+      </div>
+      <div class="telaDeJogo" style="display: none">
+        <p arthur-img>
+          <img
+            id="arthur-win"
+            class="arthur"
+            src="/images/480px.png"
+            alt="Boneco do arthur morgan"
+          />
+        </p>
+        <div class="white_board">
+          <div class="itens-caracter">
+            <p>JOKENPÔ</p>
+            <div>
+              <button id="scissors">
+                <img src="/images/mão2.PNG" alt="tesoura" />
+              </button>
+              <button id="rock">
+                <img src="/images/maopedra.PNG" alt="pedra" />
+              </button>
+              <button id="paper">
+                <img src="/images/maopapel.PNG" alt="papel" />
+              </button>
+            </div>
+            <p class="result">Você ganhou!</p>
+            <p class="your-score">
+              Sua pontuação: <span id="human-score">0</span>
+            </p>
+            <p class="machine-score">
+              Pontuação do 2° Jogador: <span id="machine-score">0</span>
+            </p>
+          </div>
+        </div>
+        <img
+          class="Micah"
+          id="micah-win"
+          src="/images/MicahBell.png"
+          alt="Boneco do arthur morgan"
+        />
+      </div>
+      <button id="mute-button">Mutar</button>
+    </section>
+    <audio
+      id="background-audio"
+      loop
+      src="music\Red Dead Redemption 2 Official Soundtrack - American Venom _ HD (With Visualizer) [ ezmp3.cc ].mp3"
+      type="audio/mpeg"
+    ></audio>
+  </body>
+  <script src="/script.js"></script>
+</html>
